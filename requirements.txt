@@ -1,2 +1,2 @@
 pip
-git+git://https://github.com/Bunny-Hana/S.H.T-Nancy/testancy.py
+https://github.com/Bunny-Hana/S.H.T-Nancy/testancy.py
