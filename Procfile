@@ -1,1 +1,1 @@
-worker: node Testancy.py 
+worker: Testancy.py 
