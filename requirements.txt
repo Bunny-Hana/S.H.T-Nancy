@@ -1,2 +1,1 @@
 pip
-https://github.com/Bunny-Hana/S.H.T-Nancy/testancy.py
