@@ -1,2 +1,2 @@
 pip
-git+git://github.com/Bunny-hana/S.H.T.Nancy/Testancy.py#egg=Testancy.py
+Testancy.py
