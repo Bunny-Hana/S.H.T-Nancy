@@ -1,1 +1,1 @@
-worker: Testancy.py 
+worker: python Testancy.py
