@@ -53,4 +53,12 @@ async def on_message(message):
     elif 'S.H.T' in message.content:
         await client.send_message(message.channel, 'Did anyone called me?')
         
+    elif message.content.startswith('실험 戊호!'):
+        async for log in client.logs_from(message.channel, limit=1):
+            if log.author == message.author:
+                await client.delete_message(log)
+        em = discord.Embed()
+        em.set_image(url="https://i.imgur.com/xXk8nVo.gif")
+        await client.send_message(message.channel, embed=em)
+        
 client.run('NDY0NDQzMjc0NDQzMzU4MjA5.Dh_CPg.uCPNZRenyArtUAcCJKR6utMSXhs')
