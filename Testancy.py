@@ -53,7 +53,7 @@ async def on_message(message):
     elif 'S.H.T' in message.content:
         await client.send_message(message.channel, 'Did anyone called me?')
         
-    elif message.content.startswith('Experiment Code.甲!'):
+    elif message.content.startswith('Exp.1!'):
         async for log in client.logs_from(message.channel, limit=1):
             if log.author == message.author:
                 await client.delete_message(log)
