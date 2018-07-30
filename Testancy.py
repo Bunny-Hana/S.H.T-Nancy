@@ -60,5 +60,14 @@ async def on_message(message):
         em = discord.Embed()
         em.set_image(url="https://i.imgur.com/xXk8nVo.gif")
         await client.send_message(message.channel, embed=em)
+       
+    elif message.content.startswith('Delete All!'):
+        async for msg in client.logs_from(message.channel):
+            await client.delete_message(msg)
+
+    elif message.content.startswith('Delete Me!'):
+        async for log in client.logs_from(message.channel, limit=NONSENSE_LIMIT):
+            if log.author == message.author:
+                await client.delete_message(log)
         
 client.run('NDY0NDQzMjc0NDQzMzU4MjA5.Dh_CPg.uCPNZRenyArtUAcCJKR6utMSXhs')
