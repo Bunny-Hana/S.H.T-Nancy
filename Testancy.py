@@ -71,8 +71,8 @@ async def on_message(message):
                 await client.delete_message(log)
                 
     elif message.content.startswith('Delete'):
-      msg = message.content.split(" ")
-      async for log in client.logs_from(message.channel, limit=int(msg[1])):
+        msg = message.content.split(" ")
+        async for log in client.logs_from(message.channel, limit=int(msg[1])):
             await client.delete_message(log)
                 
     elif message.content.startswith('Delete Command!'):
