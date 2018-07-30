@@ -72,7 +72,7 @@ async def on_message(message):
                 
     elif message.content.startswith('Delete'):
         msg = message.content.split(" ")
-        async for log in client.logs_from(message.channel, limit=int(msg[1])):
+        async for log in client.logs_from(message.channel, limit=int(msg[1])): #사용 예시 : Delete 3 3개 메시지만큼을 삭제하라. split 명령어는 " " 내부의 띄어쓰기로 문장을 분리함. int(msg[1])은 띄어쓰기로 나뉜 문장 중 몇번째 구절을 선택할 것인지 표현하는 명령어. 예 : int(msg)[1]은 가 나 다 라 마 바사 중 나 를 고름. [2]는 다 를 고름.
             await client.delete_message(log)
                 
     elif message.content.startswith('Delete Command!'):
