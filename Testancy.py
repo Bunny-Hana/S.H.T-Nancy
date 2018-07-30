@@ -70,6 +70,11 @@ async def on_message(message):
             if log.author == message.author:
                 await client.delete_message(log)
                 
+    elif message.content.startswith('Delete'):
+      msg = message.content.split(" ")
+      async for log in client.logs_from(message.channel, limit=int(msg[1])):
+            await client.delete_message(log)
+                
     elif message.content.startswith('Delete Command!'):
         async for log in client.logs_from(message.channel, limit=NONSENSE_LIMIT):
             if log.author.id =='464443274443358209':
