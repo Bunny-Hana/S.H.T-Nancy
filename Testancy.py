@@ -82,4 +82,4 @@ async def on_message(message):
             if log.author.id =='464443274443358209':
                 await client.delete_message(log)
         
-client.run(f.read() + 'jc0NDQzMzU4MjA5.DkK5bQ.' + f1.read())
+client.run(f.read() + 'U4MjA5.DkLA2Q.0vYyl' + f1.read())
