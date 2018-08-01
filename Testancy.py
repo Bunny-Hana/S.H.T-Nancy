@@ -3,8 +3,8 @@ import asyncio
 import random
 
 client = discord.Client()
-f = open("849728.txt")
-f1 = open("158972.txt")
+f = open("https://github.com/Bunny-Hana/S.H.T-Nancy/blob/master/849728.txt")
+f1 = open("https://github.com/Bunny-Hana/S.H.T-Nancy/blob/master/158972.txt")
 
 @client.event
 async def on_ready():
