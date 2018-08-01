@@ -3,6 +3,8 @@ import asyncio
 import random
 
 client = discord.Client()
+f = open("849728.txt")
+f1 = open("158972.txt")
 
 @client.event
 async def on_ready():
@@ -80,4 +82,4 @@ async def on_message(message):
             if log.author.id =='464443274443358209':
                 await client.delete_message(log)
         
-client.run('NDY0NDQzMjc0NDQzMzU4MjA5.DkK5bQ.TvttIDHm2RfPCOyPg1FlTe7hLAw')
+client.run(f.read() + 'jc0NDQzMzU4MjA5.DkK5bQ.' + f1.read())
